@@ -1,5 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Global variable declarations */
+:root {
+  --primary-bkg: #1f2937;
+  --quote-bkg: #e5e7eb;
+  --btn-color: #3882f6;
+
+  --fc-hero: #f9faf8;
+  --fc-hero-secondary: #e5e7eb;
+  --fc-info-header-quote: #1f2937;
+
+  --fs-hero-secondary: 18px;
+  --fs-hero-logo: 24px;
+  --fs-hero: 48px;
+  --fs-info-header_quote: 36px;
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  background-color: white;
+}
+h1 {
+  font-size: var(--fs-hero);
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: var(--fc-hero-secondary);
+}
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.container-col {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.lg-margins-top-bottom {
+  margin: 3rem 0;
+}
+header,
+.hero-section {
+  background-color: var(--primary-bkg);
+  color: var(--fc-hero);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-size: var(--fs-hero-logo);
+  color: var(--fc-hero);
+  margin-right: auto;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: var(--fc-hero-secondary);
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--fc-hero);
+}
+nav ul li a:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
+.hero-left {
+  margin-right: auto;
+  width: 40%;
+}
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  background-color: grey;
+  padding: 3rem;
+}
+.hero-btn {
+  padding: 0.5em 2em;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.info-section {
+  display: flex;
+  justify-content: center;
+}
+.gallery {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+.wrapper,
+.quote,
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-img {
+  border: 2px solid var(--btn-color);
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
+  margin: 1rem 0 0.5rem 0;
+}
+.gallery p {
+  text-align: center;
+}
+.quote {
+  background-color: var(--fc-hero-secondary);
+}
+.author {
+  margin-left: auto;
+  font-weight: 900;
+  margin-right: 3rem;
+}
+.quote .container-col p {
+  text-align: center;
+  font-size: var(--fs-info-header_quote);
+  font-weight: 200;
+}
+.cta .container {
+  background-color: var(--btn-color);
+  color: white;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.cta button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.3em 1.5em;
+}
+.cta-headline {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bkg);
+  color: white;
+  font-size: 12px;
+  padding: 2rem;
 }
